@@ -1,0 +1,10 @@
+.navigation-bar{
+    background: darkred;
+    height: 50px
+}
+
+.navigation-links{
+    color: white;
+    justify-self: left;
+}
+
