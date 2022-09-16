@@ -47,7 +47,7 @@ const NavBar = () => {
             component="a"
             href="/"
             sx={{
-              mr: 2,
+              mr: 6,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
               fontWeight: 700,
@@ -56,9 +56,8 @@ const NavBar = () => {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            ZIGIHOF
           </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
