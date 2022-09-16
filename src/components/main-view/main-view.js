@@ -1,12 +1,8 @@
 import React from 'react';
 import NavBar from '../nav-bar/nav-bar';
 
-export default class MainView extends React.Component{
-    constructor(){
-        super();
-    }
+const MainView = () => {
 
-    render() {
         return(
             <React.Fragment>
                 <NavBar></NavBar>
@@ -15,6 +11,6 @@ export default class MainView extends React.Component{
                 </div>
             </React.Fragment>
         );
-        
-    }
 }
+
+export default MainView
