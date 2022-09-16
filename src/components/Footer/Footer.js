@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet } from 'react-router-dom';
 import {
 Box,
 Container,
@@ -17,6 +18,7 @@ return (
 		ZigiHof Farm
 	</h1>
 	<Container>
+	<Outlet/>
 		<Row>
 		<Column>
 			<Heading>About Us</Heading>

@@ -1,15 +1,15 @@
-import React from "react";
-import { createTheme } from "@material-ui/core/styles";
-import { MuiThemeProvider } from "@material-ui/core/styles";
+import './App.scss';
+import { MuiThemeProvider } from '@material-ui/core/styles';
+import { createTheme } from '@material-ui/core/styles';
 import { Provider } from 'react-redux';
-
-import "./App.scss";
-import Routing from "./routes";
-import MainView from './routes/MainView/MainView';
-import NavBar from './components/NavBar/NavBar';
-import HelperLogin from './routes/HelperLogin/HelperLogin';
-import { Routes, Route } from 'react-router-dom';
 import store from "./ReduxStore/ReduxStore"
+
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import MainView from './routes/MainView/MainView';
+import HelperLogin from './routes/HelperLogin/HelperLogin';
+import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
 
 const theme = createTheme({
   palette: {
