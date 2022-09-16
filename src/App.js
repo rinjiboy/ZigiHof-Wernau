@@ -4,7 +4,7 @@ import { createTheme } from '@material-ui/core/styles';
 
 import React from 'react';
 import Routing from './routes';
-import MainView from './components/main-view/main-view';
+import MainView from './components/MainView/MainView';
 
 const theme = createTheme({
 	palette: {

@@ -1,15 +1,14 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import MainView from './components/main-view/main-view';
-import AboutUs from './components/about-us/about-us';
+import MainView from './components/MainView/MainView';
+import Footer from './components/Footer/Footer';
 
 const Routing = () => {
 return(
 	<main>
 		<Routes>
 					<Route exact path="/" element={<MainView/>} />	
-					<Route exact path="/about-us" element={<AboutUs/>} />
 		</Routes>
 	</main>
 	);
