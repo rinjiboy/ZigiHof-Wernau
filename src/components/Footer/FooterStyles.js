@@ -9,7 +9,7 @@ width: 100%;
 
 
 @media (max-width: 1000px) {
-	padding: 70px 30px;
+	padding: 60px 30px;
 }
 `;
 
@@ -26,7 +26,7 @@ export const Column = styled.div`
 display: flex;
 flex-direction: column;
 text-align: left;
-margin-left: 60px;
+margin-left: 40px;
 `;
 
 export const Row = styled.div`
@@ -56,6 +56,6 @@ text-decoration: none;
 export const Heading = styled.p`
 font-size: 24px;
 color: #fff;
-margin-bottom: 40px;
+margin-bottom: 0px;
 font-weight: bold;
 `;
