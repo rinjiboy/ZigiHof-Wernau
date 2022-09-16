@@ -3,8 +3,12 @@ import { createTheme } from "@material-ui/core/styles";
 import { MuiThemeProvider } from "@material-ui/core/styles";
 import { Provider } from 'react-redux';
 
-import "./App.css";
-import MainView from "./components/MainView/MainView";
+import "./App.scss";
+import Routing from "./routes";
+import MainView from './routes/MainView/MainView';
+import NavBar from './components/NavBar/NavBar';
+import HelperLogin from './routes/HelperLogin/HelperLogin';
+import { Routes, Route } from 'react-router-dom';
 import store from "./ReduxStore/ReduxStore"
 
 const theme = createTheme({
@@ -29,7 +33,12 @@ function App() {
     <React.Fragment>
       <Provider store={store}>
         <MuiThemeProvider theme={theme}>
-          <MainView />
+			<Routes>
+				<Route path="/" element={<NavBar/>} >	
+					<Route index element={<MainView />} />
+					<Route path='admin' element={<HelperLogin />} />
+				</Route>	
+			</Routes>
         </MuiThemeProvider>
       </Provider>
     </React.Fragment>

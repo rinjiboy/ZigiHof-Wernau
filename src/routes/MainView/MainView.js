@@ -1,14 +1,13 @@
 import React from "react";
-import NavBar from "../NavBar/NavBar";
-import Footer from "../Footer/Footer";
-import SlideShow from "../SlideShow/SlideShow";
+import NavBar from "../../components/NavBar/NavBar";
+import Footer from "../../components/Footer/Footer";
+import SlideShow from "../../components/SlideShow/SlideShow";
 
-import './MainView.css'
+import './MainView.scss'
 
 const MainView = () => {
   return (
     <React.Fragment>
-      <NavBar></NavBar>
       <SlideShow></SlideShow>
       <div>
         <p>
@@ -52,7 +51,6 @@ const MainView = () => {
           authoritative history of lorem ipsum.{" "}
         </p>
       </div>
-      <Footer></Footer>
     </React.Fragment>
   );
 };

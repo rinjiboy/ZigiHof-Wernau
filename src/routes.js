@@ -1,14 +1,19 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import MainView from './components/MainView/MainView';
+import MainView from './routes/MainView/MainView';
+import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
+import HelperLogin from './routes/HelperLogin/HelperLogin';
 
 const Routing = () => {
 return(
 	<main>
 		<Routes>
-					<Route exact path="/" element={<MainView/>} />	
+			<Route path="/" element={<NavBar/>} >	
+				<Route index element={<MainView />} />
+				<Route path='admin' element={<HelperLogin />} />
+			</Route>	
 		</Routes>
 	</main>
 	);
